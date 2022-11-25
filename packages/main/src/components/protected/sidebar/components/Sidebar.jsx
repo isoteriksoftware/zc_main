@@ -144,6 +144,12 @@ const Sidebar = props => {
             name={`${t("workspace_chat.drafts")}`}
             image={draftIcon}
           />
+          <SingleRoom name="Drafts" image={draftIcon} />
+          <SingleRoom
+            name="Video Chat"
+            image={dmIcon}
+            link={`/workspace/${currentWorkspace}/video-chat`}
+          />
 
           <Starred starredRooms={starredRooms} />
           {singleItems}

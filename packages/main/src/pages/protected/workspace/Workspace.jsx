@@ -28,6 +28,7 @@ import {
   BsFillCaretDownFill,
   BsWindowSidebar
 } from "react-icons/bs";
+import VideoChat from "../../../components/media-chat/VideoChat";
 
 export default function Index() {
   const { workspaceId } = useParams();
@@ -172,6 +173,10 @@ export default function Index() {
           <Switch>
             <Route exact path="/workspace/:workspaceId">
               <h1>Welcome to your Workspace</h1>
+            </Route>
+
+            <Route path="/workspace/:workspaceId/video-chat">
+              <VideoChat />
             </Route>
 
             {/* <Route
